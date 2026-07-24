@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vintage Newspaper</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --fontSize:20px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    height:100%;
+    overflow:hidden;
+    font-family:'Libre Baskerville',serif;
+    background:#514a41;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:18px;
+    background:
+        radial-gradient(circle at top,#807564,#4c463d 70%);
+}
+
+/* Newspaper */
+
+.paper{
+    width:min(1000px,95vw);
+    height:95vh;
+
+    background:
+    linear-gradient(rgba(255,255,255,.05),rgba(0,0,0,.03)),
+    repeating-linear-gradient(
+        0deg,
+        rgba(0,0,0,.015),
+        rgba(0,0,0,.015) 2px,
+        transparent 2px,
+        transparent 4px
+    ),
+    #efe5cf;
+
+    border:12px solid #d1c09d;
+
+    box-shadow:
+        0 20px 70px rgba(0,0,0,.45),
+        inset 0 0 80px rgba(80,60,20,.16);
+
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+}
+
+/* Header */
+
+.header{
+    padding:10px 22px;
+    text-align:center;
+    border-bottom:4px double #222;
+    flex-shrink:0;
+}
+
+.masthead{
+    font-family:'Cinzel',serif;
+    font-size:clamp(30px,4vw,48px);
+    letter-spacing:6px;
+    text-transform:uppercase;
+}
+
+.date{
+    margin-top:4px;
+    font-size:11px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+/* Controls */
+
+.controls{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:14px;
+
+    padding:10px;
+
+    background:#e5d8bd;
+
+    border-bottom:2px solid #444;
+
+    flex-shrink:0;
+}
+
+.controls input{
+    width:220px;
+}
+
+/* Scroll Area */
+
+.article{
+    flex:1;
+    overflow-y:auto;
+    padding:22px 45px 40px;
+}
+
+/* Scrollbar */
+
+.article::-webkit-scrollbar{
+    width:12px;
+}
+
+.article::-webkit-scrollbar-track{
+    background:#d7cab0;
+}
+
+.article::-webkit-scrollbar-thumb{
+    background:#6c5d4b;
+}
+
+/* Headline */
+
+.headline{
+    font-family:'Cinzel',serif;
+    font-size:30px;
+    text-align:center;
+    text-transform:uppercase;
+    line-height:1.15;
+    margin-bottom:8px;
+}
+
+/* Subtitle */
+
+.subtitle{
+    text-align:center;
+    font-style:italic;
+    font-size:15px;
+
+    border-top:1px solid #333;
+    border-bottom:1px solid #333;
+
+    padding:8px;
+
+    margin-bottom:18px;
+}
+
+/* Rule */
+
+.rule{
+    border-top:2px solid #111;
+    border-bottom:1px solid #111;
+    height:4px;
+    margin-bottom:20px;
+}
+
+/* Text */
+
+.content{
+    font-size:var(--fontSize);
+    line-height:1.9;
+    text-align:justify;
+
+    column-count:2;
+    column-gap:55px;
+}
+
+.content p{
+    margin-bottom:18px;
+}
+
+.content p:first-child::first-letter{
+    float:left;
+    font-size:4.4em;
+    line-height:.78;
+    padding-right:10px;
+    font-weight:bold;
+}
+
+/* Mobile */
+
+@media(max-width:750px){
+
+.content{
+    column-count:1;
+}
+
+.article{
+    padding:18px;
+}
+
+.headline{
+    font-size:24px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="paper">
+
+    <div class="header">
+        <div class="masthead">
+            THE DAILY CHRONICLE
+        </div>
+
+        <div class="date">
+            EST. 1889 • SPECIAL EDITION
+        </div>
+    </div>
+
+    <div class="controls">
+        <b>Font Size</b>
+
+        <input
+            type="range"
+            min="14"
+            max="34"
+            value="20"
+            oninput="document.documentElement.style.setProperty('--fontSize',this.value+'px')">
+
+        <span id="size">20px</span>
+    </div>
+
+    <div class="article">
+
+        <!-- REPLACE THIS -->
+        <div class="headline">
+            Your Headline Here
+        </div>
+
+        <!-- REPLACE THIS -->
+        <div class="subtitle">
+            Replace this subtitle or remove it entirely.
+        </div>
+
+        <div class="rule"></div>
+
+        <!-- REPLACE THIS TEXT -->
+        <div class="content">
+
+<p>
+We've grown up a little
+User avatar
+lincoln mac ginger @lincoln_mac_gi · 43m · edited: 7m
+Public</p>
+<p>
+You look like other humans - thats ok.
+
+I had enough sex to understand this is not a point - it's not about platonic -
+
+you can still have sex. STABLE IS THE POINT - Ever dreamed in your wildest dreams
+
+to Date a person that is NOT INSANE. from terrible to bad to barable - becuase stable
+
+----</p>
+<p>
+secret society - what's the point of keeping some horse shit a secret - what will happen if somebody
+
+finds out - are you going to kill?
+
+----</p>
+<p>
+This taller sex partners exist for a reason - you secret somebody had not opened our eyes to anything
+
+----</p>
+<p>
+if only one person has sex then nobody is taller - vuola! Evrica! Victory! Profit!!!
+
+----</p>
+<p>
+Good god im blessed you "finaly" angry - see guys? RUN While you can!!!
+
+----</p>
+<p>
+"angry" - trust me - for millions of days - this is all the "secret" sociaty is about. Run - im serious
+
+
+</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+const slider=document.querySelector("input");
+const label=document.getElementById("size");
+
+document.documentElement.style.setProperty("--fontSize","20px");
+
+slider.oninput=function(){
+document.documentElement.style.setProperty("--fontSize",this.value+"px");
+label.textContent=this.value+"px";
+}
+</script>
+
+</body>
+</html>
